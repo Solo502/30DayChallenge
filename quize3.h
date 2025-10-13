@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 
-#define MAX     (20)
+#define MAX         (20)
+#define LOW2HIGH    (1)
+#define HIGH2LOW    (2)
 
 using namespace std;
 
@@ -32,8 +34,9 @@ public:
     void Display(void);
     void Append(int x);
     void Insert(int index, int value);
-    void Delete(int index);
-    void sort();
-    void search();
+    int Delete(int index);
+    void Sort(int optional);
+    int Search(int value);
+    int Bin_Search(int value);
 
 };
